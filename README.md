@@ -1,6 +1,6 @@
 # Portofolio Web Pribadi - Miracle Kaligis
 
-Proyek ini adalah website portofolio pribadi statis yang dibangun sepenuhnya menggunakan teknologi inti web (**HTML5, CSS3, dan Vanilla JavaScript**) tanpa bergantung pada *library* atau *framework* eksternal seperti Bootstrap, Tailwind, atau jQuery. 
+Proyek ini adalah website portofolio pribadi statis yang dibangun sepenuhnya menggunakan teknologi inti web (**HTML5, CSS3, dan JavaScript**) tanpa bergantung pada *library* atau *framework* eksternal seperti Bootstrap, Tailwind, atau jQuery. 
 
 Website ini dirancang untuk menampilkan profil, hasil karya (galeri), catatan/artikel (blog), serta informasi kontak, sekaligus memenuhi spesifikasi tugas mata kuliah Pengembangan Web di program studi Informatika, Universitas Sam Ratulangi (UNSRAT).
 
