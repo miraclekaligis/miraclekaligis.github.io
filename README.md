@@ -1,38 +1,42 @@
-# Portofolio Web Pribadi - Miracle Kaligis
+# 🌐 Portofolio Web Pribadi - Miracle Kaligis
 
-Proyek ini adalah website portofolio pribadi statis yang dibangun sepenuhnya menggunakan teknologi inti web (**HTML5, CSS3, dan JavaScript**) tanpa bergantung pada *library* atau *framework* eksternal seperti Bootstrap, Tailwind, atau jQuery. 
+Selamat datang di repositori website portofolio pribadi saya! Website ini dirancang untuk menampilkan profil, keahlian teknis, dan berbagai proyek yang telah saya kembangkan sebagai Mahasiswa Informatika di Universitas Sam Ratulangi (UNSRAT).
 
-Website ini dirancang untuk menampilkan profil, hasil karya (galeri), catatan/artikel (blog), serta informasi kontak, sekaligus memenuhi spesifikasi tugas mata kuliah Pengembangan Web di program studi Informatika, Universitas Sam Ratulangi (UNSRAT).
+## 💡 Tentang Proyek Ini
+
+Website portofolio ini dibangun sepenuhnya menggunakan **Vanilla HTML, CSS, dan JavaScript** tanpa framework eksternal yang berat. Desainnya mengusung tema gelap (dark mode) dengan efek *Glassmorphism* dan aksen warna *glowing* (biru dan cyan) untuk memberikan kesan modern, futuristik, dan profesional.
+
+Fokus utama portofolio ini adalah untuk memamerkan keterampilan saya di bidang:
+- **💻 Pemrograman Web** (HTML, CSS, JS, PHP)
+- **🤖 Developer AI** (Python, Deteksi Objek, Model Offline)
+- **🎨 Multimedia & Desain** (Desain Grafis, Video, Produksi Audio)
+- **🎮 Game Development** (Unity, Roblox Studio)
 
 ## ✨ Fitur Utama
 
-- **Desain Modern & Responsif:** Menggunakan tata letak *CSS Grid* dan *Flexbox* yang beradaptasi dengan sempurna di berbagai ukuran layar (Desktop, Tablet, dan Mobile).
-- **Efek Glassmorphism:** Elemen antarmuka (kartu, navigasi) dirancang dengan efek kaca tembus pandang bergaya elegan dipadukan dengan aksen warna neon.
-- **Animasi Murni Vanilla JS & CSS:**
-  - *Typing Effect* (Efek mengetik otomatis) di halaman Beranda.
-  - *Scroll Reveal Animation* (Elemen muncul perlahan saat di-scroll) menggunakan `IntersectionObserver` API.
-  - *Floating & Glowing Animation* pada foto profil.
-- **Clean URL (URL Bersih):** Konfigurasi menggunakan file `.htaccess` untuk menghilangkan ekstensi `.html` pada bilah alamat browser, sehingga URL terlihat jauh lebih profesional (contoh: `/gallery` bukan `/gallery.html`).
+- **UI/UX Modern**: Menggunakan efek *Glassmorphism* (kaca buram) dan gradasi teks.
+- **Animasi Dinamis**: Dilengkapi dengan efek mengetik (typing effect), kursor berkedip, gambar profil mengambang (floating), dan animasi *scroll reveal* yang halus.
+- **Responsif Sepenuhnya**: Tampilan secara otomatis menyesuaikan diri (Mobile-Friendly) dari layar desktop besar hingga smartphone, menggunakan *hamburger menu* pada tampilan mobile.
+- **Sistem Navigasi Cerdas**: Penggabungan section Beranda dan Keterampilan dalam satu halaman (`index.html`) untuk aksesibilitas yang cepat, dengan halaman terpisah untuk Blog, Gallery, dan Contact.
+- **Showcase Proyek (Blog)**: Menampilkan studi kasus dan rincian proyek, seperti Web Pencarian PDDIKTI Khusus UNSRAT, Prototipe TUMOU BIN (IoT & AI), dan pengembangan SaaS.
 
 ## 🛠️ Teknologi yang Digunakan
 
-- **HTML5:** Struktur semantik web.
-- **CSS3:** Penataan gaya, variabel kustom (*Custom Properties*), dan animasi *Keyframes*.
-- **JavaScript (ES6+):** Manipulasi DOM murni untuk interaktivitas (menu navigasi *mobile*, animasi ketik, efek *scroll*, dan *alert* formulir).
-- **Apache (.htaccess):** Konfigurasi server lokal/hosting untuk *URL rewriting*.
+- **HTML5**: Struktur semantik web.
+- **CSS3**: Styling khusus (Custom Properties/Variables, Flexbox, CSS Grid, Keyframes Animations, Backdrop-filter).
+- **JavaScript (Vanilla)**: Manipulasi DOM untuk menu *toggle*, animasi *scroll reveal*, dan efek mengetik.
+- **Google Fonts**: Menggunakan font 'Poppins' untuk tipografi modern dan bersih.
 
 ## 📂 Struktur Direktori
 ```text
-📁 Tugas-Web/
-├── 📁 img/                 # Direktori penyimpanan aset gambar/foto
-│   ├── profil.jpg
-│   ├── foto1.jpg
-│   └── ...
-├── 📄 .htaccess            # Aturan URL Rewrite & keamanan direktori
-├── 📄 style.css            # File stylesheet utama
-├── 📄 script.js            # Logika interaktivitas Javascript murni
-├── 📄 index.html           # Halaman Beranda (Home)
-├── 📄 gallery.html         # Halaman Galeri Karya
-├── 📄 blog.html            # Halaman Artikel/Catatan Digital
-├── 📄 contact.html         # Halaman Informasi Data Diri & Formulir Kontak
-└── 📄 README.md            # Dokumentasi proyek (File ini)
+📁 portofolio-web/
+├── 📁 css/
+│   └── style.css          # Semua gaya dan animasi CSS
+├── 📁 js/
+│   └── script.js          # Logika interaktivitas dan animasi
+├── 📁 img/
+│   └── profil1.jpeg       # Aset gambar profil
+├── index.html             # Halaman Utama (Beranda & Keterampilan)
+├── blog.html              # Halaman Artikel/Catatan Digital Proyek
+├── gallery.html           # Halaman Galeri Karya/Sertifikat (Draf)
+└── contact.html           # Halaman Kontak & Informasi Data Diri (Draf)

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Web</title>
+    <title>Portofolio Web - Miracle Kaligis</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="tajuk">
-        <a href="/" class="logo">Portofolio</a>
+        <a href="#beranda" class="logo">Portofolio</a>
         <nav class="navigasi_bar">
-            <a href="/" class="aktif">Beranda</a>
+            <a href="#beranda" class="aktif">Beranda</a>
             <a href="gallery">Gallery</a>
             <a href="blog">Blog</a>
             <a href="contact">Contact</a>
@@ -19,7 +19,8 @@
     </header>
 
     <main>
-        <section class="beranda">
+        <!-- SECTION BERANDA -->
+        <section id="beranda" class="beranda">
             <!-- SISI KIRI: TEKS -->
             <div class="konten_beranda">
                 <h3 class="animasi-kiri">Halo, Selamat Datang!</h3>
@@ -28,22 +29,60 @@
                 <!-- Efek Mengetik -->
                 <h3 class="animasi-kiri delay-2">Seorang <span id="teks-mengetik" class="teks-sorot"></span><span class="kursor">|</span></h3>
                 
-                <p class="animasi-atas delay-3">Mahasiswa Informatika UNSRAT yang antusias dalam mengembangkan solusi digital. Fokus pada pengembangan web, teknologi Internet of Things (IoT), dan desain visual.</p>
-                <a href="https://unityunsrat.rf.gd/" class="tombol1 animasi-atas delay-3">Karya Saya</a>
+                <p class="animasi-atas delay-3">Mahasiswa Informatika UNSRAT yang antusias dalam mengembangkan solusi digital. Fokus pada Pemrograman Web, Kecerdasan Buatan (AI), dan produksi Multimedia.</p>
+                <a href="" class="tombol1 animasi-atas delay-3">Karya Saya</a>
             </div>
 
             <!-- SISI KANAN: FOTO PROFIL BULAT GLOWING -->
             <div class="foto-profil-container animasi-kanan delay-2">
                 <div class="lingkaran-glowing">
-                    <!-- Pastikan foto Anda bernama profil.jpg dan ada di folder img -->
-                    <img src="img/profil.jpg" alt="Foto Miracle Kaligis">
+                    <!-- Pastikan foto Anda bernama profil1.jpeg dan ada di folder img -->
+                    <img src="img/profil1.jpeg" alt="Foto Miracle Kaligis">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION KETERAMPILAN (Menyatu di bawah Beranda) -->
+        <section id="keterampilan" class="keterampilan">
+            <div class="keterampilan-header animasi-atas">
+                <h2>Keterampilan <span class="teks-sorot">Saya</span></h2>
+                <p>Keahlian teknis dan kreatif yang saya kembangkan</p>
+            </div>
+
+            <div class="keterampilan-container">
+                <!-- Kartu 1: Web Dev -->
+                <div class="kartu-skill animasi-atas delay-1">
+                    <div class="ikon-skill">💻</div>
+                    <h3>Pemrograman Web</h3>
+                    <p>Pengembangan sistem dan website interaktif menggunakan HTML, CSS, JavaScript, dan PHP.</p>
+                </div>
+
+                <!-- Kartu 2: AI Developer -->
+                <div class="kartu-skill animasi-atas delay-2">
+                    <div class="ikon-skill">🤖</div>
+                    <h3>Developer AI</h3>
+                    <p>Pengembangan model kecerdasan buatan, sistem deteksi objek, dan pemrosesan data menggunakan Python.</p>
+                </div>
+
+                <!-- Kartu 3: Multimedia -->
+                <div class="kartu-skill animasi-atas delay-3">
+                    <div class="ikon-skill">🎨</div>
+                    <h3>Multimedia & Desain</h3>
+                    <p>Desain visual, pengeditan video, dan produksi musik digital (audio track) menggunakan FL Studio.</p>
+                </div>
+
+                <!-- Kartu 4: Game Dev -->
+                <div class="kartu-skill animasi-atas delay-4">
+                    <div class="ikon-skill">🎮</div>
+                    <h3>Game Development</h3>
+                    <p>Pembuatan game 2D/3D interaktif menggunakan Unity engine dan Roblox Studio.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Miracle Kaligis. Pengembangan Web.</p>
+        <p>&copy; 2026 Miracle Kaligis. Hak Cipta Dilindungi.</p>
     </footer>
 
     <script src="js/script.js"></script>

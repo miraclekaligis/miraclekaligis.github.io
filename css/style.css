@@ -21,6 +21,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /* Tambahan agar scroll ke menu halus */
 }
 
 body {
@@ -220,6 +221,63 @@ main {
     50% { transform: translateY(-20px); }
 }
 
+/* ========== SECTION KETERAMPILAN ========== */
+.keterampilan {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.keterampilan-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.keterampilan-header p {
+    font-size: 16px;
+    color: #8e93a1;
+    margin-bottom: 50px;
+}
+
+.keterampilan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.kartu-skill {
+    background: var(--warna3); /* Mengikuti tema kartu kaca */
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-kaca);
+    border-radius: 20px;
+    padding: 40px 20px;
+    width: 260px;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.kartu-skill:hover {
+    transform: translateY(-10px);
+    border-color: var(--warna2);
+    box-shadow: 0 15px 30px rgba(0, 255, 204, 0.1);
+}
+
+.ikon-skill {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.kartu-skill h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--warna1);
+}
+
+.kartu-skill p {
+    font-size: 14px;
+    color: #8e93a1;
+    line-height: 1.6;
+}
+
 /* ========== HALAMAN GALLERY ========== */
 .gallery-grid {
     display: grid;
@@ -363,6 +421,7 @@ footer {
 .delay-1 { animation-delay: 0.3s; }
 .delay-2 { animation-delay: 0.6s; }
 .delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; } /* Tambahan delay untuk kartu ke 4 */
 
 @keyframes geserKiri { 
     0% { transform: translateX(-50px); opacity: 0; } 
@@ -428,5 +487,9 @@ footer {
     
     .konten_beranda h1 {
         font-size: 38px;
+    }
+    
+    .keterampilan {
+        margin-top: 80px;
     }
 }
