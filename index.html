@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda | Portofolio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="tajuk">
+        <a href="index" class="logo">Portofolio</a>
+        <nav class="navigasi_bar">
+            <a href="index" class="aktif">Beranda</a>
+            <a href="gallery">Gallery</a>
+            <a href="blog">Blog</a>
+            <a href="contact">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+    </header>
+
+    <main>
+        <section class="beranda">
+            <!-- SISI KIRI: TEKS -->
+            <div class="konten_beranda">
+                <h3 class="animasi-kiri">Halo, Selamat Datang!</h3>
+                <h1 class="animasi-kiri delay-1">Saya <span class="teks-sorot">Miracle Kaligis</span></h1>
+                
+                <!-- Efek Mengetik -->
+                <h3 class="animasi-kiri delay-2">Seorang <span id="teks-mengetik" class="teks-sorot"></span><span class="kursor">|</span></h3>
+                
+                <p class="animasi-atas delay-3">Mahasiswa Informatika UNSRAT yang antusias dalam mengembangkan solusi digital. Fokus pada pengembangan web Full-Stack, teknologi Internet of Things (IoT), dan desain visual.</p>
+                <a href="gallery" class="tombol1 animasi-atas delay-3">Lihat Hasil Karya</a>
+            </div>
+
+            <!-- SISI KANAN: FOTO PROFIL BULAT GLOWING -->
+            <div class="foto-profil-container animasi-kanan delay-2">
+                <div class="lingkaran-glowing">
+                    <!-- Pastikan foto Anda bernama profil.jpg dan ada di folder img -->
+                    <img src="img/profil.jpg" alt="Foto Miracle Kaligis">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Miracle Kaligis. Pengembangan Web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
