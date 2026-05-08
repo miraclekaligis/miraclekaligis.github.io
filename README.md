@@ -23,18 +23,20 @@ Website portofolio ini dibangun sepenuhnya menggunakan **Vanilla HTML, CSS, dan 
 
 ## 📂 Struktur Direktori
 
-📁 portofolio-web/
-├── 📁 css/
-│   └── style.css          # Semua gaya dan animasi CSS
-├── 📁 js/
-│   └── script.js          # Logika interaktivitas dan animasi
-├── 📁 img/
-│   └── profil1.jpeg       # Aset gambar profil
+```text
+📁 PORTOFOLIO/
+├── 📁 asset/
+│   ├── 📁 css/
+│   │   └── style.css          # Semua gaya dan animasi CSS
+│   └── 📁 js/
+│       └── script.js          # Logika interaktivitas dan animasi
 ├── 📁 blog/
-│   └── index.html         # Halaman Artikel/Catatan Digital Proyek
-├── 📁 gallery/
-│   └── index.html         # Halaman Galeri Karya/Sertifikat
+│   └── index.html             # Halaman Artikel/Catatan Digital Proyek
 ├── 📁 contact/
-│   └── index.html         # Halaman Kontak & Informasi Data Diri
-├── index.html             # Halaman Utama (Beranda & Keterampilan)
-└── README.md              # Dokumentasi proyek portofolio
+│   └── index.html             # Halaman Kontak & Informasi Data Diri
+├── 📁 gallery/
+│   └── index.html             # Halaman Galeri Karya/Sertifikat
+├── 📁 img/
+│   └── profil1.jpeg           # Aset gambar profil
+├── index.html                 # Halaman Utama (Beranda & Keterampilan)
+└── README.md                  # Dokumentasi proyek portofolio
