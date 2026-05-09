@@ -66,5 +66,4 @@ Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScri
 ```
 ---
 
-by Miracle Kaligis  
 &copy; 2026 Miracle Kaligis. All rights reserved.
