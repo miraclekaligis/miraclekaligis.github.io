@@ -64,3 +64,7 @@ Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScri
 ├── index.html                 # Beranda (Home & Skill)
 └── README.md                  # Dokumentasi proyek
 ```
+---
+
+by Miracle Kaligis  
+&copy; 2026 Miracle Kaligis. All rights reserved.
