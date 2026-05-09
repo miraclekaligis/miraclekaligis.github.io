@@ -1,12 +1,12 @@
 # 🌐 Portofolio Web Pribadi - Miracle Kaligis
 
-> **Tugas Individual - Proyek Berseri**  
+> **Tugas Individual**  
 > Website ini dibuat sebagai tugas individu dalam rangkaian tugas proyek berseri.  
 > **Tujuan:** Membuat personal homepage atau web portofolio.  
 >  
 > **Requirement Specification:**  
 > - Dikerjakan perorangan.  
-> - Menerapkan Github, HTML, CSS, dan Javascript (Vanilla) **tanpa library/framework eksternal** (seperti JQuery, Bootstrap, dsb.).  
+> - Menerapkan Github, HTML, CSS, dan Javascript  **tanpa library/framework eksternal** (seperti JQuery, Bootstrap, dsb.).  
 > - Wajib memiliki minimum 4 halaman:  
 >   - **Home**: Halaman pembuka  
 >   - **Gallery**: Kumpulan foto-foto  
