@@ -7,13 +7,13 @@
 > **Requirement Specification:**  
 > - Dikerjakan perorangan.  
 > - Menerapkan Github, HTML, CSS, dan Javascript  **tanpa library/framework eksternal** (seperti JQuery, Bootstrap, dsb.).  
-> - Wajib memiliki minimum 4 halaman:  
+> - memiliki minimum 4 halaman:  
 >   - **Home**: Halaman pembuka  
 >   - **Gallery**: Kumpulan foto-foto  
 >   - **Blog**: Minimal 3 konten/artikel bertema bebas  
 >   - **Contact**: Data diri & kontak  
 >  
-> Website ini merupakan bagian dari portofolio akademik sebagai Mahasiswa Informatika di Universitas Sam Ratulangi (UNSRAT).
+> Website ini dikembangkan sebagai bagian dari portofolio akademik untuk mendemonstrasikan kemampuan dalam pengembangan web sebagai mahasiswa Informatika di Universitas Sam Ratulangi (UNSRAT).
 
 ---
 
