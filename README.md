@@ -45,6 +45,8 @@ Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScri
 
 ## 📂 Struktur Direktori
 
+## 📂 Struktur Direktori
+
 ```text
 📁 PORTOFOLIO/
 ├── 📁 asset/
@@ -59,39 +61,8 @@ Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScri
 ├── 📁 gallery/
 │   └── index.html             # Halaman galeri foto/karya/sertifikat
 ├── 📁 img/
-│   └── profil1.jpeg           # Gambar profil & aset gambar lainnya
+│   ├── profil1.jpeg           # Gambar profil & aset gambar lainnya
+│   └── Sertifikat.jpeg        # Sertifikat tambahan
 ├── index.html                 # Beranda (Home & Skill)
 └── README.md                  # Dokumentasi proyek
 ```
-
-## 📸 Preview
-
-(Tampilkan minimal 1-2 screenshot halaman utama, blog, galeri... jika sudah tersedia.)
-
----
-
-## 📄 Cara Menjalankan
-
-1. **Unduh atau Clone Repository:**
-   ```bash
-   git clone https://github.com/miraclekaligis/PORTOFOLIO.git
-   ```
-2. **Buka `index.html` langsung di browser**  
-   Tidak perlu instalasi atau web server eksternal.
-
-## ✍️ Catatan
-
-- Tidak menggunakan library atau framework seperti JQuery, Bootstrap, dsb.
-- Semua kode bersifat open-source untuk tujuan pembelajaran.
-- Konten blog/artikel dapat berupa tulisan tentang teknologi, seni, olahraga, dsb. (minimal 3 postingan).
-
-## 🙋‍♂️ About Me
-
-- **Nama:** Miracle Kaligis
-- **NIM:** (isi NIM Anda)
-- **Program Studi:** Informatika, Universitas Sam Ratulangi
-- **Kontak:** Silakan hubungi melalui halaman [Contact](./contact/index.html)
-
----
-
-> Website ini dibuat sebagai bagian dari tugas proyek pembelajaran untuk memperkuat keterampilan dasar web tanpa framework eksternal.
