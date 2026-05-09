@@ -1,25 +1,47 @@
 # 🌐 Portofolio Web Pribadi - Miracle Kaligis
 
-Selamat datang di repositori website portofolio pribadi saya! Website ini dirancang untuk menampilkan profil, keahlian teknis, dan berbagai proyek yang telah saya kembangkan sebagai Mahasiswa Informatika di Universitas Sam Ratulangi (UNSRAT).
+> **Tugas Individual — Proyek Berseri**  
+> Website ini dibuat sebagai tugas individu dalam rangkaian tugas proyek berseri.  
+> **Tujuan:** Membuat personal homepage atau web portofolio.  
+>  
+> **Requirement Specification:**  
+> - Dikerjakan perorangan.  
+> - Menerapkan Github, HTML, CSS, dan Javascript (Vanilla) **tanpa library/framework eksternal** (seperti JQuery, Bootstrap, dsb.).  
+> - Wajib memiliki minimum 4 halaman:  
+>   - **Home**: Halaman pembuka  
+>   - **Gallery**: Kumpulan foto-foto  
+>   - **Blog**: Minimal 3 konten/artikel bertema bebas  
+>   - **Contact**: Data diri & kontak  
+>  
+> Website ini merupakan bagian dari portofolio akademik sebagai Mahasiswa Informatika di Universitas Sam Ratulangi (UNSRAT).
+
+---
 
 ## 💡 Tentang Proyek Ini
 
-Website portofolio ini dibangun sepenuhnya menggunakan **Vanilla HTML, CSS, dan JavaScript** tanpa framework eksternal yang berat. Desainnya mengusung tema gelap (dark mode) dengan efek *Glassmorphism* dan aksen warna *glowing* (biru dan cyan) untuk memberikan kesan modern, futuristik, dan profesional.
+Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScript Vanilla**, tanpa framework atau library eksternal. Desain mengusung tema gelap (*dark mode*) dengan efek *Glassmorphism* serta aksen warna *glowing* biru dan cyan, memberikan kesan modern, futuristik, dan profesional.
 
 ## ✨ Fitur Utama
 
-- **UI/UX Modern**: Menggunakan efek *Glassmorphism* (kaca buram) dan gradasi teks.
-- **Animasi Dinamis**: Dilengkapi dengan efek mengetik (typing effect), kursor berkedip, gambar profil mengambang (floating), dan animasi *scroll reveal* yang halus.
-- **Responsif Sepenuhnya**: Tampilan secara otomatis menyesuaikan diri (Mobile-Friendly) dari layar desktop besar hingga smartphone, menggunakan *hamburger menu* pada tampilan mobile.
-- **Sistem Navigasi Cerdas**: Penggabungan section Beranda dan Keterampilan dalam satu halaman (`index.html`) untuk aksesibilitas yang cepat, dengan halaman terpisah untuk Blog, Gallery, dan Contact.
-- **Showcase Proyek (Blog)**: Menampilkan studi kasus dan rincian proyek, seperti Web Pencarian PDDIKTI Khusus UNSRAT, Prototipe TUMOU BIN (IoT & AI), dan pengembangan SaaS.
+- **UI/UX Modern:**  
+  Desain dengan glassmorphism (efek kaca buram), gradasi teks, dan tampilan konsisten di seluruh halaman.
+- **Animasi Dinamis:**  
+  Efek mengetik (*typing animation*), kursor berkedip, floating profile image, dan animasi scroll reveal yang halus.
+- **Responsif Sepenuhnya:**  
+  Layout otomatis menyesuaikan dari desktop hingga smartphone. Ada hamburger menu untuk mobile view.
+- **Sistem Navigasi Cerdas:**  
+  Beranda dan Keterampilan digabung di satu halaman (`index.html`) untuk akses cepat; Blog, Gallery, dan Contact dipisah agar lebih rapi.
+- **Showcase Proyek (Blog):**  
+  Menampilkan minimal 3 artikel atau studi kasus (misal: web pencarian PDDIKTI, prototipe IoT & AI, SaaS, dsb.).
 
 ## 🛠️ Teknologi yang Digunakan
 
-- **HTML**: Struktur semantik web.
-- **CSS**: Styling khusus (Custom Properties/Variables, Flexbox, CSS Grid, Keyframes Animations, Backdrop-filter).
-- **JavaScript (Vanilla)**: Manipulasi DOM untuk menu *toggle*, animasi *scroll reveal*, dan efek mengetik.
-- **Google Fonts**: Menggunakan font 'Poppins' untuk tipografi modern dan bersih.
+- **HTML**: Struktur web semantik modern
+- **CSS**: Custom Properties/Variables, Flexbox, CSS Grid, Keyframes Animations, Backdrop-filter untuk efek glassmorphism & glowing
+- **JavaScript (Vanilla)**:  
+  Untuk menu toggle, animasi scroll reveal, dan typing animation
+- **Google Fonts**:  
+  Menggunakan 'Poppins' untuk tampilan tipografi yang modern
 
 ## 📂 Struktur Direktori
 
@@ -27,16 +49,49 @@ Website portofolio ini dibangun sepenuhnya menggunakan **Vanilla HTML, CSS, dan 
 📁 PORTOFOLIO/
 ├── 📁 asset/
 │   ├── 📁 css/
-│   │   └── style.css          # Semua gaya dan animasi CSS
+│   │   └── style.css          # Semua gaya & animasi CSS
 │   └── 📁 js/
-│       └── script.js          # Logika interaktivitas dan animasi
+│       └── script.js          # Logika interaktif & animasi (vanilla JS)
 ├── 📁 blog/
-│   └── index.html             # Halaman Artikel/Catatan Digital Proyek
+│   └── index.html             # Halaman artikel/catatan proyek (min. 3 postingan)
 ├── 📁 contact/
-│   └── index.html             # Halaman Kontak & Informasi Data Diri
+│   └── index.html             # Halaman kontak & data diri mahasiswa
 ├── 📁 gallery/
-│   └── index.html             # Halaman Galeri Karya/Sertifikat
+│   └── index.html             # Halaman galeri foto/karya/sertifikat
 ├── 📁 img/
-│   └── profil1.jpeg           # Aset gambar profil
-├── index.html                 # Halaman Utama (Beranda & Keterampilan)
-└── README.md                  # Dokumentasi proyek portofolio
+│   └── profil1.jpeg           # Gambar profil & aset gambar lainnya
+├── index.html                 # Beranda (Home & Skill)
+└── README.md                  # Dokumentasi proyek
+```
+
+## 📸 Preview
+
+(Tampilkan minimal 1-2 screenshot halaman utama, blog, galeri... jika sudah tersedia.)
+
+---
+
+## 📄 Cara Menjalankan
+
+1. **Unduh atau Clone Repository:**
+   ```bash
+   git clone https://github.com/miraclekaligis/PORTOFOLIO.git
+   ```
+2. **Buka `index.html` langsung di browser**  
+   Tidak perlu instalasi atau web server eksternal.
+
+## ✍️ Catatan
+
+- Tidak menggunakan library atau framework seperti JQuery, Bootstrap, dsb.
+- Semua kode bersifat open-source untuk tujuan pembelajaran.
+- Konten blog/artikel dapat berupa tulisan tentang teknologi, seni, olahraga, dsb. (minimal 3 postingan).
+
+## 🙋‍♂️ About Me
+
+- **Nama:** Miracle Kaligis
+- **NIM:** (isi NIM Anda)
+- **Program Studi:** Informatika, Universitas Sam Ratulangi
+- **Kontak:** Silakan hubungi melalui halaman [Contact](./contact/index.html)
+
+---
+
+> Website ini dibuat sebagai bagian dari tugas proyek pembelajaran untuk memperkuat keterampilan dasar web tanpa framework eksternal.
