@@ -61,7 +61,8 @@ Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScri
 ├── 📁 img/
 │   ├── profil1.jpeg           # Gambar profil & aset gambar lainnya
 │   └── Sertifikat.jpeg
-    └── SEC.jpg                # Sertifikat tambahan
+    └── SEC.jpg  
+    └── Dicoding AI.jpg        # Sertifikat tambahan
 ├── index.html                 # Beranda (Home & Skill)
 └── README.md                  # Dokumentasi proyek
 ```
