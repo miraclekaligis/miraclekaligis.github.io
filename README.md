@@ -45,8 +45,6 @@ Website portofolio ini sepenuhnya dibangun menggunakan **HTML, CSS, dan JavaScri
 
 ## 📂 Struktur Direktori
 
-## 📂 Struktur Direktori
-
 ```text
 📁 PORTOFOLIO/
 ├── 📁 asset/
