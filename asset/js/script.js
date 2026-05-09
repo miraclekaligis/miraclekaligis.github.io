@@ -11,7 +11,7 @@ if (menuToggle) {
 // 2. EFEK TEKS MENGETIK OTOMATIS (MURNI JAVASCRIPT TANPA LIBRARY)
 const teksElement = document.getElementById("teks-mengetik");
 if (teksElement) {
-    const kataKunci = ["Web Developer", "Pengembang IoT", "Desainer Grafis"];
+    const kataKunci = ["Web Developer", "Game Developer", "Media Production Specialist"];
     let urutanKata = 0;
     let urutanHuruf = 0;
     let teksSaatIni = "";
