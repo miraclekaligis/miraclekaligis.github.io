@@ -1,6 +1,6 @@
 # 🌐 Portofolio Web Pribadi - Miracle Kaligis
 
-> **Tugas Individual — Proyek Berseri**  
+> **Tugas Individual - Proyek Berseri**  
 > Website ini dibuat sebagai tugas individu dalam rangkaian tugas proyek berseri.  
 > **Tujuan:** Membuat personal homepage atau web portofolio.  
 >  
