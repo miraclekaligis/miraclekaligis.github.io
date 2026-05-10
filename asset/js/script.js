@@ -74,3 +74,5 @@ if(formKontak) {
         formKontak.reset();
     });
 }
+
+// 2026 Miracle Kaligis. All rights reserved.
