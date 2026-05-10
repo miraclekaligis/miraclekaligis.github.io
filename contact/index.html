@@ -5,6 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Portofolio Web</title>
     <link rel="stylesheet" href="/asset/css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Desain List Data Diri */
+        .data-diri ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .data-diri li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            font-size: 16px;
+            transition: transform 0.3s ease;
+        }
+        .data-diri li:hover {
+            transform: translateX(5px); /* Efek geser kanan saat di-hover */
+        }
+        .ikon-keren {
+            width: 30px;
+            font-size: 18px;
+            color: #00d4ff; /* Ganti dengan warna aksen web Anda */
+            display: inline-block;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        /* Efek Hover Animasi untuk Media Sosial */
+        .sosmed-link {
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .sosmed-link img {
+            width: 30px; 
+            height: 30px; 
+            border-radius: 8px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .sosmed-link:hover img {
+            transform: scale(1.15) translateY(-3px);
+            filter: drop-shadow(0px 5px 8px rgba(255, 255, 255, 0.3));
+        }
+
+        /* Form Input Styling yang lebih modern */
+        #formKontak input, #formKontak textarea {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            color: inherit;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+        }
+        #formKontak input:focus, #formKontak textarea:focus {
+            outline: none;
+            border-color: #00d4ff;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3); /* Efek glow */
+        }
+        #formKontak textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Tombol */
+        .tombol1 {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #00d4ff, #007bff);
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .tombol1:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+        }
+    </style>
 </head>
 <body>
     <header class="tajuk">
@@ -25,25 +113,25 @@
             <div class="kartu-kaca data-diri sembunyi-scroll">
                 <h3>Data Diri Mahasiswa</h3>
                 <ul>
-                    <li><span class="ikon">&#128100;</span> <div><strong>Nama:</strong> Miracle Frangklin Delano Kaligis</div></li>
-                    <li><span class="ikon">&#127891;</span> <div><strong>Program Studi:</strong> Informatika (Semester 4)</div></li>
-                    <li><span class="ikon">&#127970;</span> <div><strong>Fakultas:</strong> Teknik</div></li>
-                    <li><span class="ikon">&#127979;</span> <div><strong>Universitas:</strong> Universitas Sam Ratulangi (UNSRAT)</div></li>
-                    <li><span class="ikon">&#128205;</span> <div><strong>Domisili:</strong> Kawangkoan, Minahasa</div></li>
-                    <li><span class="ikon">&#128231;</span> <div><strong>Email:</strong> officialmiraclekaligis@gmail.com</div></li>
+                    <li><span class="ikon-keren"><i class="fas fa-user"></i></span> <div><strong>Nama:</strong> Miracle Frangklin Delano Kaligis</div></li>
+                    <li><span class="ikon-keren"><i class="fas fa-graduation-cap"></i></span> <div><strong>Program Studi:</strong> Informatika (Semester 4)</div></li>
+                    <li><span class="ikon-keren"><i class="fas fa-building"></i></span> <div><strong>Fakultas:</strong> Teknik</div></li>
+                    <li><span class="ikon-keren"><i class="fas fa-university"></i></span> <div><strong>Universitas:</strong> Universitas Sam Ratulangi (UNSRAT)</div></li>
+                    <li><span class="ikon-keren"><i class="fas fa-map-marker-alt"></i></span> <div><strong>Domisili:</strong> Kawangkoan, Minahasa</div></li>
+                    <li><span class="ikon-keren"><i class="fas fa-envelope"></i></span> <div><strong>Email:</strong> officialmiraclekaligis@gmail.com</div></li>
                     
-                    <li style="display: flex; align-items: center;">
-                        <span class="ikon">&#128279;</span>
-                        <div style="display: flex; align-items: center; gap: 10px;">
+                    <li style="margin-top: 10px;">
+                        <span class="ikon-keren"><i class="fas fa-link"></i></span>
+                        <div style="display: flex; align-items: center; gap: 12px;">
                             <strong>Media Sosial:</strong>
-                            <a href="#" target="_blank" title="Instagram" style="display: flex; align-items: center;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" style="width: 28px; height: 28px; border-radius: 5px;">
+                            <a href="#" target="_blank" title="Instagram" class="sosmed-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
                             </a>
-                            <a href="#" target="_blank" title="WhatsApp" style="display: flex; align-items: center;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 28px; height: 28px; border-radius: 5px;">
+                            <a href="#" target="_blank" title="WhatsApp" class="sosmed-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
                             </a>
-                            <a href="#" target="_blank" title="LinkedIn" style="display: flex; align-items: center;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 28px; height: 28px; border-radius: 5px;">
+                            <a href="#" target="_blank" title="LinkedIn" class="sosmed-link">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
                             </a>
                         </div>
                     </li>
@@ -56,7 +144,7 @@
                     <input type="text" id="nama" placeholder="Nama Lengkap" required>
                     <input type="email" id="email" placeholder="Alamat Email" required>
                     <textarea id="pesan" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
-                    <button type="submit" class="tombol1" style="width: 100%;">Kirim Pesan</button>
+                    <button type="submit" class="tombol1" style="width: 100%;"><i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Kirim Pesan</button>
                 </form>
             </div>
         </div>
