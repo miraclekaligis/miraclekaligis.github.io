@@ -6,14 +6,22 @@
     --warna1: #f8f9fa;
     --warna2: #00ffcc;
     --warna-gradasi: linear-gradient(135deg, #00ffcc, #0077ff);
+    --warna-gradasi-animasi: linear-gradient(270deg, #00ffcc, #0077ff, #00ffcc);
     --warna3: rgba(255, 255, 255, 0.03);
     --border-kaca: rgba(255, 255, 255, 0.08);
+    --kaca-kilap: inset 0 0 15px rgba(255, 255, 255, 0.02);
 }
 
 /* ========== CUSTOM SCROLLBAR ========== */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--latar_belakang); }
-::-webkit-scrollbar-thumb { background: var(--warna2); border-radius: 10px; }
+::-webkit-scrollbar-thumb { 
+    background: var(--warna-gradasi); 
+    border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffcc;
+}
 
 /* ========== RESET & DASAR ========== */
 * {
@@ -21,12 +29,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth; /* Tambahan agar scroll ke menu halus */
+    scroll-behavior: smooth;
 }
 
 body {
     color: var(--warna1);
-    background: radial-gradient(circle at top left, #121a2f 0%, var(--latar_belakang) 40%);
+    /* Latar belakang animasi yang elegan */
+    background: linear-gradient(-45deg, #0a0f1d, #050505, #121a2f, #050505);
+    background-size: 400% 400%;
+    animation: gerakBackground 15s ease infinite;
     background-attachment: fixed;
     overflow-x: hidden;
     display: flex;
@@ -34,19 +45,34 @@ body {
     min-height: 100vh;
 }
 
-/* ========== GRADASI TEKS ========== */
+@keyframes gerakBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ========== GRADASI TEKS ANIMASI ========== */
 .teks-sorot {
-    background: var(--warna-gradasi);
+    background: var(--warna-gradasi-animasi);
+    background-size: 200% 200%;
+    animation: gradasiTeks 3s ease infinite;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
 
+@keyframes gradasiTeks {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 /* ========== TAJUK (HEADER) ========== */
 .tajuk {
-    background: rgba(5, 5, 5, 0.7);
-    backdrop-filter: blur(20px);
+    background: rgba(5, 5, 5, 0.6);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     border-bottom: 1px solid var(--border-kaca);
     position: sticky;
     top: 0; 
@@ -57,6 +83,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -65,6 +92,11 @@ body {
     color: var(--warna1);
     text-decoration: none;
     letter-spacing: 1px;
+    transition: text-shadow 0.3s ease;
+}
+
+.logo:hover {
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
 }
 
 .navigasi_bar a {
@@ -73,7 +105,25 @@ body {
     font-weight: 500;
     color: #a7a9be;
     margin-left: 35px;
+    position: relative;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efek garis bawah animasi saat navigasi di-hover */
+.navigasi_bar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: var(--warna2);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px var(--warna2);
+}
+
+.navigasi_bar a:hover::after, .navigasi_bar a.aktif::after {
+    width: 100%;
 }
 
 .navigasi_bar a:hover, .navigasi_bar a.aktif {
@@ -86,6 +136,11 @@ body {
     font-size: 28px;
     color: var(--warna1);
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.menu-toggle:hover {
+    transform: scale(1.1);
+    color: var(--warna2);
 }
 
 /* ========== KOMPONEN UMUM ========== */
@@ -98,40 +153,45 @@ main {
     text-align: center;
     font-size: 40px;
     margin-bottom: 40px;
+    letter-spacing: 1px;
 }
 
 .tombol1 {
     display: inline-block;
-    background: var(--warna-gradasi);
-    padding: 12px 32px;
+    background: var(--warna-gradasi-animasi);
+    background-size: 200% 200%;
+    padding: 14px 35px;
     border-radius: 30px;
     font-weight: 600; 
     color: #000;
     text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-position 0.4s ease;
     border: none;
     cursor: pointer;
 }
 
 .tombol1:hover { 
     transform: translateY(-3px); 
-    box-shadow: 0 10px 20px rgba(0, 255, 204, 0.3); 
+    background-position: 100% 50%;
+    box-shadow: 0 10px 25px rgba(0, 255, 204, 0.4); 
 }
 
-/* Efek Kaca (Glassmorphism) */
+/* Efek Kaca Premium (Glassmorphism) */
 .kartu-kaca {
     background: var(--warna3);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     padding: 30px;
     border-radius: 20px;
     border: 1px solid var(--border-kaca);
-    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: var(--kaca-kilap), 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .kartu-kaca:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--warna2);
-    box-shadow: 0 15px 30px rgba(0, 255, 204, 0.1);
+    box-shadow: var(--kaca-kilap), 0 15px 35px rgba(0, 255, 204, 0.15);
 }
 
 /* ========== HALAMAN HOME & FOTO PROFIL ========== */
@@ -153,10 +213,12 @@ main {
     font-size: 24px; 
     font-weight: 600; 
     color: #a7a9be; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .konten_beranda h1 { 
-    font-size: 50px; 
+    font-size: 55px; 
     font-weight: 800; 
     margin: 10px 0; 
     line-height: 1.2; 
@@ -165,11 +227,11 @@ main {
 .konten_beranda p { 
     font-size: 16px; 
     color: #8e93a1; 
-    line-height: 1.7; 
-    margin: 20px 0 30px; 
+    line-height: 1.8; 
+    margin: 20px 0 35px; 
 }
 
-/* Foto Profil */
+/* Foto Profil Lebi Keren */
 .foto-profil-container {
     display: flex;
     justify-content: center;
@@ -188,6 +250,18 @@ main {
     animation: mengambang 4s ease-in-out infinite;
 }
 
+/* Efek Pulsing Glow */
+.lingkaran-glowing::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(0, 255, 204, 0.3);
+    animation: pulse 2s ease-out infinite;
+    z-index: -2;
+}
+
 .lingkaran-glowing::before {
     content: '';
     position: absolute;
@@ -197,7 +271,7 @@ main {
     background: var(--warna-gradasi);
     animation: putar 5s linear infinite;
     z-index: -1;
-    box-shadow: 0 0 35px rgba(0, 255, 204, 0.6);
+    box-shadow: 0 0 35px rgba(0, 255, 204, 0.4);
 }
 
 .lingkaran-glowing img {
@@ -210,6 +284,11 @@ main {
     border: 8px solid var(--latar_belakang); 
     z-index: 1;
     background-color: var(--latar_belakang);
+    transition: transform 0.5s ease;
+}
+
+.lingkaran-glowing:hover img {
+    transform: scale(1.05);
 }
 
 @keyframes putar {
@@ -219,7 +298,12 @@ main {
 
 @keyframes mengambang {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.15); opacity: 0; }
 }
 
 /* ========== SECTION KETERAMPILAN ========== */
@@ -247,24 +331,45 @@ main {
 }
 
 .kartu-skill {
-    background: var(--warna3); /* Mengikuti tema kartu kaca */
-    backdrop-filter: blur(10px);
+    background: var(--warna3); 
+    backdrop-filter: blur(15px);
     border: 1px solid var(--border-kaca);
     border-radius: 20px;
     padding: 40px 20px;
     width: 260px;
-    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: var(--kaca-kilap), 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Garis atas aksen saat di hover */
+.kartu-skill::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 0; height: 3px;
+    background: var(--warna2);
+    transition: width 0.4s ease;
+}
+
+.kartu-skill:hover::before {
+    width: 100%;
 }
 
 .kartu-skill:hover {
-    transform: translateY(-10px);
-    border-color: var(--warna2);
-    box-shadow: 0 15px 30px rgba(0, 255, 204, 0.1);
+    transform: translateY(-12px);
+    border-color: rgba(0, 255, 204, 0.3);
+    box-shadow: var(--kaca-kilap), 0 20px 40px rgba(0, 255, 204, 0.1);
 }
 
 .ikon-skill {
     font-size: 45px;
     margin-bottom: 20px;
+    background: var(--warna-gradasi);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .kartu-skill h3 {
@@ -292,15 +397,15 @@ main {
     object-fit: cover;
     border-radius: 15px;
     border: 1px solid var(--border-kaca);
-    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
-    filter: grayscale(50%);
+    filter: grayscale(60%) brightness(80%);
 }
 
 .gallery-grid img:hover {
-    filter: grayscale(0%);
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
-    transform: scale(1.05) translateY(-10px);
+    filter: grayscale(0%) brightness(100%);
+    box-shadow: 0 10px 25px rgba(0, 255, 204, 0.3);
+    transform: scale(1.03) translateY(-5px);
     border-color: var(--warna2);
 }
 
@@ -315,12 +420,17 @@ main {
     font-size: 24px; 
     margin-bottom: 5px; 
     color: var(--warna1); 
+    transition: color 0.3s ease;
+}
+.kartu-kaca:hover .blog-post h2 {
+    color: var(--warna2);
 }
 
 .blog-post .tanggal { 
     color: var(--warna2); 
     font-size: 14px; 
     margin-bottom: 15px; 
+    letter-spacing: 1px;
 }
 
 .blog-post p { 
@@ -341,23 +451,50 @@ main {
 }
 
 .data-diri h3, .form-kontak h3 { 
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
     font-size: 24px; 
+    position: relative;
+    display: inline-block;
+}
+
+.data-diri h3::after, .form-kontak h3::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: var(--warna2);
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
 }
 
 .data-diri ul { list-style: none; }
 
 .data-diri li { 
-    margin-bottom: 15px; 
+    margin-bottom: 20px; 
     font-size: 16px; 
     color: #a7a9be; 
     display: flex; 
     align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.data-diri li span.ikon { 
-    font-size: 20px; 
-    margin-right: 15px; 
+.data-diri li:hover {
+    transform: translateX(8px);
+    color: var(--warna1);
+}
+
+.ikon-keren {
+    width: 30px;
+    font-size: 18px;
+    color: var(--warna2);
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+.data-diri li:hover .ikon-keren {
+    transform: scale(1.2);
 }
 
 .data-diri strong { 
@@ -365,41 +502,70 @@ main {
     margin-right: 5px; 
 }
 
+/* Efek Sosmed Link */
+.sosmed-link {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.sosmed-link img {
+    width: 32px; 
+    height: 32px; 
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.sosmed-link:hover img {
+    transform: scale(1.2) translateY(-4px);
+    filter: drop-shadow(0px 8px 12px rgba(0, 255, 204, 0.5)); 
+}
+
+/* Form Styling */
 .form-kontak form { 
     display: flex; 
     flex-direction: column; 
-    gap: 15px; 
+    gap: 18px; 
 }
 
 .form-kontak input, .form-kontak textarea {
-    padding: 15px; 
+    padding: 16px; 
     border-radius: 12px; 
-    background: rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--border-kaca); 
     color: var(--warna1); 
     outline: none; 
     font-size: 15px;
-    transition: border-color 0.3s ease;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-kontak input:hover, .form-kontak textarea:hover {
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .form-kontak input:focus, .form-kontak textarea:focus { 
-    border-color: var(--warna2); 
+    border-color: var(--warna2);
+    background: rgba(0, 255, 204, 0.02);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+    transform: translateY(-2px);
 }
 
 .form-kontak textarea { 
-    resize: none; 
-    height: 150px; 
+    resize: vertical; 
+    min-height: 150px; 
 }
 
 /* ========== FOOTER ========== */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background: rgba(5,5,5,0.9);
     border-top: 1px solid var(--border-kaca);
     color: #8e93a1;
     font-size: 14px;
     margin-top: auto;
+    letter-spacing: 1px;
 }
 
 /* ========== ANIMASI KURSOR MENGETIK ========== */
@@ -419,10 +585,10 @@ footer {
 .animasi-kanan { opacity: 0; animation: geserKanan 1s ease forwards; }
 .animasi-atas { opacity: 0; animation: geserAtas 1s ease forwards; }
 
-.delay-1 { animation-delay: 0.3s; }
-.delay-2 { animation-delay: 0.6s; }
-.delay-3 { animation-delay: 0.9s; }
-.delay-4 { animation-delay: 1.2s; } /* Tambahan delay untuk kartu ke 4 */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; } 
 
 @keyframes geserKiri { 
     0% { transform: translateX(-50px); opacity: 0; } 
@@ -442,8 +608,8 @@ footer {
 /* ========== ANIMASI SCROLL REVEAL ========== */
 .sembunyi-scroll {
     opacity: 0;
-    transform: translateY(50px) scale(0.95);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(60px) scale(0.95);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .muncul-scroll {
@@ -462,15 +628,23 @@ footer {
         top: 100%; 
         left: 0; 
         width: 100%;
-        background: rgba(5,5,5,0.95); 
-        backdrop-filter: blur(10px);
+        background: rgba(5,5,5,0.98); 
+        backdrop-filter: blur(15px);
         flex-direction: column; 
         text-align: center;
         border-bottom: 1px solid var(--border-kaca);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     }
     
-    .navigasi_bar.tampil { display: flex; }
-    .navigasi_bar a { margin: 0; padding: 15px 0; border-top: 1px solid var(--border-kaca); }
+    .navigasi_bar.tampil { display: flex; animation: slideBawah 0.3s ease; }
+    
+    @keyframes slideBawah {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .navigasi_bar a { margin: 0; padding: 18px 0; border-top: 1px solid var(--border-kaca); }
+    .navigasi_bar a::after { display: none; } /* Matikan garis bawah di mobile */
     main { padding: 40px 5%; }
     
     .beranda { 
@@ -487,7 +661,7 @@ footer {
     }
     
     .konten_beranda h1 {
-        font-size: 38px;
+        font-size: 42px;
     }
     
     .keterampilan {
