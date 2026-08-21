@@ -3,75 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Portofolio Web</title>
+    <title>Blog | Esports & Multimedia Support</title>
     <link rel="stylesheet" href="/asset/css/style.css">
 </head>
 <body>
+    
+    <!-- Header Navigasi bergaya UI Game -->
     <header class="tajuk">
-        <a href="../" class="logo">Portofolio</a>
+        <a href="../" class="logo">PORTFOLIO<span class="titik-aksen">.</span></a>
         <nav class="navigasi_bar">
-            <a href="../">Home</a>
-            <a href="../gallery/">Gallery</a>
-            <a href="../blog/" class="aktif">Blog</a>
-            <a href="../contact/">Contact</a>
+            <a href="../">HOME</a>
+            <a href="../blog/" class="aktif">BLOG</a>
+            <a href="../contact/">CONTACT</a>
         </nav>
         <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     </header>
 
     <main>
-        <h1 class="judul-halaman animasi-atas">Catatan <span class="teks-sorot">Digital</span></h1>
+        <div class="section-head text-center sembunyi-scroll">
+            <span class="eyebrow glow-text">ARSIP DATA //</span>
+            <h1 class="judul-halaman animasi-atas">CATATAN <span class="teks-sorot">DIGITAL</span></h1>
+        </div>
         
         <div class="blog-container">
             
-            <article class="kartu-kaca blog-post sembunyi-scroll">
-                <h2>Membangun Web Pencarian PDDIKTI Khusus UNSRAT</h2>
-                <p class="tanggal">&#128197; Mei 2026</p>
-                <p>Proyek pengembangan <i>Single Page Application</i> (SPA) yang berfungsi sebagai portal pencarian profil Mahasiswa dan Dosen khusus Universitas Sam Ratulangi (UNSRAT). Dibangun menggunakan PHP sebagai Proxy API untuk mengatasi isu CORS, serta antarmuka modern dengan Tailwind CSS. Sistem ini dilengkapi fitur pintar seperti filter otomatis kampus, deteksi identitas dinamis (Mahasiswa/Dosen), ekstraksi tahun angkatan dari NIM, hingga algoritma ekstraksi data JSON mentah. Hasil akhirnya adalah sebuah Sistem Informasi Akademik mini yang efisien dan otomatis.</p>
-                <div style="margin-top: 25px;">
-                    <a href="https://unityunsrat.rf.gd/" target="_blank" class="tombol1" style="padding: 10px 24px; font-size: 14px;">Lihat Project</a>
+            <!-- Artikel 1 (Diperbarui khusus Esports & Diperpanjang) -->
+            <article class="kartu-esports blog-post sembunyi-scroll delay-1">
+                <div class="blog-meta">
+                    <span class="tanggal">&#128197; AGUSTUS 2026</span>
+                    <span class="kategori-badge">ESPORTS</span>
                 </div>
+                <h2>Dinamika Ekosistem Esports: Dari Hobi Menjadi Industri Profesional</h2>
+                <p>Esports kini bukan lagi sekadar ajang bermain game untuk mengisi waktu luang, melainkan telah berevolusi menjadi ekosistem industri yang sangat masif dan kompetitif. Dari pembentukan tim profesional, manajemen atlet, hingga perancangan strategi makro di dalam permainan, setiap elemen menuntut dedikasi dan kedisiplinan tingkat tinggi. Di Indonesia sendiri, pertumbuhan talenta-talenta muda dan dukungan komunitas lokal terus mendorong batas-batas kompetisi ke level internasional. Artikel ini mengupas secara mendalam bagaimana para *pro player* beradaptasi dengan *meta* permainan yang terus berubah secara dinamis, pentingnya analisis data pertandingan untuk evaluasi *gameplay*, serta peran krusial mentalitas juara saat bertarung habis-habisan di panggung besar di bawah tekanan ribuan pasang mata penonton.</p>
+                <div style="margin-top: 30px;">
+                    <a href="#" class="tombol-esports-kecil">
+                        <span class="teks-tombol">SEGERA</span>
+                        <span class="efek-garis"></span>
+                    </a>
+                </div>
+                <div class="garis-animasi"></div>
             </article>
 
-            <article class="kartu-kaca blog-post sembunyi-scroll">
-                <h2>SIMG: Digitalisasi Sistem Informasi Gereja</h2>
-                <p class="tanggal">&#128197; April 2026</p>
-                <p>Pengembangan Sistem Informasi berbasis web (SIMG) yang dirancang khusus untuk mendigitalisasi dan mengotomatisasi manajemen data keanggotaan serta kehadiran jemaat. Proyek ini dibangun sebagai solusi modern untuk menggantikan proses rekapitulasi dan entri data yang sebelumnya masih dilakukan secara manual menggunakan Microsoft Excel, sehingga tata kelola informasi organisasi menjadi jauh lebih akurat, aman, dan mudah diakses.</p>
-                <div style="margin-top: 25px;">
-                    <a href="https://sigalilea.biz.id" target="_blank" class="tombol1" style="padding: 10px 24px; font-size: 14px;">Lihat Project</a>
-                </div>
-            </article>
-
-            <article class="kartu-kaca blog-post sembunyi-scroll">
-                <h2>PKM-KC: TUMOU BIN</h2>
-                <p class="tanggal">&#128197; Mei 2026</p>
-                <p>Pengembangan tempat sampah pintar menggunakan ESP32-CAM dan model AI offline membuka potensi besar untuk manajemen lingkungan di tingkat komunitas. Sistem ini mampu mendeteksi kapasitas muatan dan memilah jenis sampah, menjadikannya solusi efisien untuk daerah perkotaan.</p>
-                <div style="margin-top: 25px;">
-                    <a href="#" class="tombol1" style="padding: 10px 24px; font-size: 14px;">Segera</a>
-                </div>
-            </article>
-
-            <article class="kartu-kaca blog-post sembunyi-scroll">
-                <h2>Dinamika Pengembangan SaaS Undangan Digital</h2>
-                <p class="tanggal">&#128197; April 2026</p>
-                <p>Membangun platform Software-as-a-Service (SaaS) menggunakan PHP murni dan MySQL menuntut pemahaman yang kuat terkait desain database dan logika routing. Artikel ini membahas tantangan membuat sistem dinamis di mana setiap pengguna dapat memiliki tautan unik.</p>
-                <div style="margin-top: 25px;">
-                    <a href="#" class="tombol1" style="padding: 10px 24px; font-size: 14px;">Segera</a>
-                </div>
-            </article>
-
-            <article class="kartu-kaca blog-post sembunyi-scroll">
-                <h2>Peran Desain Grafis dalam Komunitas Esports</h2>
-                <p class="tanggal">&#128197; Maret 2026</p>
-                <p>Dalam ekosistem esports, identitas visual sama pentingnya dengan performa tim. Membuat jersey bertema tim profesional atau materi promosi untuk komunitas lokal membutuhkan kombinasi estetika dan fungsionalitas yang tepat untuk membangun ikatan penggemar.</p>
-                <div style="margin-top: 25px;">
-                    <a href="#" class="tombol1" style="padding: 10px 24px; font-size: 14px;">Segera</a>
-                </div>
-            </article>
-            
         </div>
     </main>
 
-    <footer>
+    <footer id="kontak-footer">
         <p>&copy; 2026 Miracle Kaligis. All rights reserved.</p>
     </footer>
 

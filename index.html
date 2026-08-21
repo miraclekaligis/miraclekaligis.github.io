@@ -3,97 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portofolio Web</title>
+    <title>Miracle Kaligis | Esports & Multimedia Support</title>
     <link rel="stylesheet" href="/asset/css/style.css">
 </head>
 <body>
+
+    <!-- Header Navigasi bergaya UI Game -->
     <header class="tajuk">
-        <a href="/" class="logo">Portofolio</a>
+        <a href="/" class="logo">PORTFOLIO<span class="titik-aksen">.</span></a>
         <nav class="navigasi_bar">
-            <a href="/" class="aktif">Home</a>
-            <a href="gallery/">Gallery</a>
-            <a href="blog/">Blog</a>
-            <a href="contact/">Contact</a>
+            <a href="/" class="aktif">HOME</a>
+            <!-- Menu Gallery sudah dihapus -->
+            <a href="blog/">BLOG</a>
+            <a href="#kontak">CONTACT</a>
         </nav>
         <div class="menu-toggle" id="mobile-menu">&#9776;</div>
     </header>
 
     <main>
+        <!-- Bagian Beranda / Hero Utama -->
         <section id="beranda" class="beranda">
             <div class="konten_beranda">
-                <h3 class="animasi-kiri">Halo, Selamat Datang!</h3>
-                <h1 class="animasi-kiri delay-1">Saya <span class="teks-sorot">Miracle Kaligis</span></h1>
+                <h3 class="animasi-kiri eyebrow-esports">HALO!</h3>
+                <h1 class="animasi-kiri delay-1">SAYA <span class="teks-sorot">MIRACLE KALIGIS</span></h1>
                 
-                <h3 class="animasi-kiri delay-2">Seorang <span id="teks-mengetik" class="teks-sorot"></span><span class="kursor">|</span></h3>
+                <h3 class="animasi-kiri delay-2 subtitle-esports">SEORANG <span id="teks-mengetik" class="teks-sorot"></span><span class="kursor">|</span></h3>
                 
-                <p class="animasi-atas delay-3">Mahasiswa Informatika UNSRAT yang antusias dalam mengembangkan solusi digital.</p>
-                
-                <a href="#proyek" class="tombol1 animasi-atas delay-3">Karya Saya</a>
+                <a href="#rundown" class="tombol-esports animasi-atas delay-3" style="margin-top: 30px;">
+                    <span class="teks-tombol">AREA DUKUNGAN</span>
+                    <span class="efek-garis"></span>
+                </a>
             </div>
 
             <div class="foto-profil-container animasi-kanan delay-2">
-                <div class="lingkaran-glowing">
+                <div class="hexagon-glowing">
                     <img src="img/profil1.jpeg" alt="Foto Miracle Kaligis">
                 </div>
             </div>
         </section>
 
-        <section id="keterampilan" class="keterampilan sembunyi-scroll">
-            <div class="keterampilan-header">
-                <h2>Keterampilan <span class="teks-sorot">Saya</span></h2>
-                <p>Keahlian teknis dan kreatif yang saya kembangkan</p>
+        <!-- Bagian Area Dukungan (Esports Tech Grid) -->
+        <section id="rundown" class="area-dukungan-keren">
+            <div class="section-head text-center sembunyi-scroll">
+                <span class="eyebrow glow-text">AREA DUKUNGAN // MULTIMEDIA</span>
+                <h2>YANG BISA SAYA <span class="teks-sorot">BANTU</span></h2>
+                <p class="ket">Lima area utama dukungan teknis dan operasional untuk produksi acara dan broadcast esports.</p>
             </div>
 
-            <div class="keterampilan-container">
-                <div class="kartu-skill">
-                    <div class="ikon-skill">💻</div>
-                    <h3>Pemrograman Web</h3>
-                    <p>Pengembangan sistem dan website interaktif menggunakan HTML, CSS, JavaScript, dan PHP.</p>
+            <div class="grid-layanan">
+                <!-- Kartu 1 -->
+                <div class="kartu-esports sembunyi-scroll">
+                    <div class="layanan-bg-angka">01</div>
+                    <div class="layanan-header">
+                        <div class="ikon-glow">📡</div>
+                        <h3>BROADCAST SUPPORT</h3>
+                    </div>
+                    <p>Membantu kebutuhan teknis dan operasional selama live streaming dan pertandingan berlangsung.</p>
+                    <div class="garis-animasi"></div>
                 </div>
 
-                <div class="kartu-skill delay-1">
-                    <div class="ikon-skill">🤖</div>
-                    <h3>Web Dev dengan AI</h3>
-                    <p>Mengintegrasikan model Kecerdasan Buatan (AI) ke dalam aplikasi web serta memanfaatkan AI untuk mempercepat proses pengembangan.</p>
+                <!-- Kartu 2 -->
+                <div class="kartu-esports sembunyi-scroll delay-1">
+                    <div class="layanan-bg-angka">02</div>
+                    <div class="layanan-header">
+                        <div class="ikon-glow">🎥</div>
+                        <h3>CAMERA SUPPORT</h3>
+                    </div>
+                    <p>Membantu persiapan, pengoperasian, dan penataan perangkat kamera dengan presisi visual.</p>
+                    <div class="garis-animasi"></div>
                 </div>
 
-                <div class="kartu-skill delay-2">
-                    <div class="ikon-skill">🎨</div>
-                    <h3>Multimedia & Desain</h3>
-                    <p>Desain visual, pengeditan video, dan produksi musik digital (audio track) menggunakan FL Studio.</p>
+                <!-- Kartu 3 -->
+                <div class="kartu-esports sembunyi-scroll delay-2">
+                    <div class="layanan-bg-angka">03</div>
+                    <div class="layanan-header">
+                        <div class="ikon-glow">🖥️</div>
+                        <h3>OBS & STREAMING</h3>
+                    </div>
+                    <p>Membantu pengoperasian OBS, pengaturan scene, overlay, serta tampilan HUD pertandingan.</p>
+                    <div class="garis-animasi"></div>
                 </div>
 
-                <div class="kartu-skill delay-3">
-                    <div class="ikon-skill">🎮</div>
-                    <h3>Game Development</h3>
-                    <p>Pembuatan game 2D/3D interaktif menggunakan Unity engine dan Roblox Studio.</p>
+                <!-- Kartu 4 -->
+                <div class="kartu-esports sembunyi-scroll delay-3">
+                    <div class="layanan-bg-angka">04</div>
+                    <div class="layanan-header">
+                        <div class="ikon-glow">📸</div>
+                        <h3>MEDIA DOC</h3>
+                    </div>
+                    <p>Membantu dokumentasi kegiatan dalam bentuk foto dan video selama acara berlangsung.</p>
+                    <div class="garis-animasi"></div>
                 </div>
-            </div>
-        </section>
 
-        <section id="proyek" class="keterampilan sembunyi-scroll" style="margin-bottom: 60px;">
-            <div class="keterampilan-header">
-                <h2>Proyek <span class="teks-sorot">Terbaru</span></h2>
-                <p>Beberapa karya digital yang telah saya bangun</p>
-            </div>
-
-            <div class="keterampilan-container">
-                <div class="kartu-skill">
-                    <div class="ikon-skill">⛪</div>
-                    <h3>SIMG (Sistem Informasi Gereja)</h3>
-                    <a href="#" onclick="return false;" class="tombol1" style="margin-top: 20px; padding: 8px 24px; font-size: 14px; background: #333; color: #888; cursor: not-allowed; box-shadow: none; pointer-events: none;">Sedang Offline</a>
-                </div>
-                
-                <div class="kartu-skill delay-1">
-                    <div class="ikon-skill">🎓</div>
-                    <h3>Web Pencarian PDDIKTI</h3>
-                    <a href="#" onclick="return false;" class="tombol1" style="margin-top: 20px; padding: 8px 24px; font-size: 14px; background: #333; color: #888; cursor: not-allowed; box-shadow: none; pointer-events: none;">Sedang Offline</a>
+                <!-- Kartu 5 -->
+                <div class="kartu-esports sembunyi-scroll delay-4">
+                    <div class="layanan-bg-angka">05</div>
+                    <div class="layanan-header">
+                        <div class="ikon-glow">🎚️</div>
+                        <h3>TECH EQUIPMENT</h3>
+                    </div>
+                    <p>Memastikan perangkat multimedia: kamera, monitor, capture card, audio, dan koneksi siap digunakan.</p>
+                    <div class="garis-animasi"></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <!-- Footer Simple -->
+    <footer id="kontak">
         <p>&copy; 2026 Miracle Kaligis. All rights reserved.</p>
     </footer>
 
